@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ head.title }}</title>
+  <meta name="author" content="">
+  <meta name="description" content="{{ document.desc }}">
+  <meta name="keywords" content="{{ document.keywords }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ config.hostaddr }}templates/default/css/default.css">
+  <!-- Custom styles for this template-->
+  <link href="{{ config.hostaddr }}vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="{{ config.hostaddr }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<script src="{{config.hostaddr }}vendor/jquery/jquery.min.js"></script>
+	<script src="{{config.hostaddr }}vendor/jquery/popper.js"></script>
+	<script src="{{config.hostaddr }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	{{ content }}
+	{% include 'html_loginform' with {'formurl':auth.loginurl,'error_msg':error_msg,'formtoken':formtoken} %}
+</body>
+
+</html>

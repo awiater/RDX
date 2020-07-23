@@ -1,0 +1,17 @@
+{% if yesno_nocolor %}
+<select name="{{ yesno_name }}" class="form-control yesno" id="{{ yesno_id }}">
+	{% if yesno_incblnk %}
+	<option value=""></option>
+	{% endif %}
+	<option value="1" {{ yesno_enabled==1 ? 'selected="true"'}}>{{ strings.general.yes }}</option>
+	<option value="0" {{ yesno_enabled==0 ? 'selected="true"'}}>{{ strings.general.no }}</option>
+{% else %}
+<select name="{{ yesno_name }}" class="form-control yesno text-white {{ yesno_enabled ? 'bg-success':'bg-danger' }}" id="{{ yesno_id }}">
+
+	{% if yesno_incblnk %}
+	<option value=""></option>
+	{% endif %}
+	<option class="bg-success text-white" value="1" {{ yesno_enabled==1 ? 'selected="true"'}}>{{ strings.general.yes }}</option>
+	<option class="bg-danger text-white" value="0" {{ yesno_enabled==0 ? 'selected="true"'}}>{{ strings.general.no }}</option>
+{% endif %}
+</select>

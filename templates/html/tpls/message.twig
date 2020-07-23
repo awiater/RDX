@@ -1,0 +1,13 @@
+<div class="well alert alert-{{ type }}" role="alert">
+ 	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  {% if type in 'info' %}
+  	<strong>{{ strings.general.msg_info }}</strong>
+  {% elseif type in 'success' %}
+  	<strong>{{ strings.general.msg_success }}</strong>
+  {% elseif type in 'warning' %}
+  	<strong>{{ strings.general.msg_warning }}</strong>
+  {% elseif type in 'danger' %}
+  	<strong>{{ strings.general.msg_danger }}</strong>
+  {% endif %}
+  {{ msg }}
+</div>

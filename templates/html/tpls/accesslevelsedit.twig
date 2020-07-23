@@ -1,0 +1,12 @@
+<select class="form-control" id="acclvl_id" name="{{ acclvl_name }}" required>
+{% if accvl_incblnk %}
+	<option value=""></option>
+{% endif %}
+{% for level in levels %}
+	{% if acclvl_level %}
+	<option value="{{ level.level }}" {{ acclvl_level==level.level ? 'selected="true"' }}>{{ level.name }}</option>
+	{% else %}
+	<option value="{{ level.level }}">{{ level.name }}</option>
+	{% endif %}
+{% endfor %}
+</select>

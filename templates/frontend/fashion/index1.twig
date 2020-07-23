@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SB Admin 2 - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="{{ config.hostaddr }}templates/frontend/fashion/fashion.css" rel="stylesheet">
+  <link href="{{ config.hostaddr }}vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="{{ config.hostaddr }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ config.hostaddr }}templates/admin/default.css" rel="stylesheet">
+  <style>
+  	.top-panel{
+  		background-color: {{ template.body_panel_color }};
+  		height:200px;
+  		width:100%;
+  		border-color:{{ template.menu_panel_border }};
+  		
+  	}
+  	.logo-panel{
+  		background-color: {{ template.panel_color }};
+  		width:100%;
+  		border-style: solid;
+  		border-width: 1px ;
+  	}
+  	.menu-panel{
+  		background-color: {{ template.menu_panel_color }};
+  		height:100%;
+  		border-style: solid;
+  		border-width:1px;
+  		border-color:{{ template.menu_panel_border }};
+  	}
+  	.menu-btn{
+  		background-color: {{ template.menu_panel_color }};
+  		text-color:{{ template.menu_panel_txt_color }};;
+  	}
+  	
+  	.body-panel{
+  		background-color: {{ template.body_panel_color }};
+  		height:100%;
+  		width:100%;
+  		border-color:{{ template.menu_panel_border }};
+  	}
+  	
+  	.admin-menu{
+  		background-color: {{ template.menu_panel_color }};
+  		width:100%;
+  	}
+  	
+  	.toggled{
+		width:200px;
+		display: block;
+		position:fixed;
+		right:0;
+	}
+
+	.full-height{
+		height:100%;	
+	}
+  </style>
+</head>
+
+<body>
+<div class="row col-12 ml-0 top-panel">
+	<div class="col-md-9 logo-panel rounded-left">
+		<div class="col-sm-7 col-md-12 border" style="height:80%">LOGO</div>
+		<button type="button" onclick="toogleMenu('side-panel',1);toogleMenu('btn-side-collapse-1',0);" id="btn-side-collapse-1" class="btn menu-btn d-md-none d-xs-block  float-right"><i class="fa fa-bars"></i></button>
+	</div>
+	<div class="col-3 logo-panel d-none d-md-block border-top border-bottom border-right rounded-right">
+		<div class="h-75"></div>
+		<div class="h-25 pb-2 pt-2 border rounded">
+			{% if document.url=='/' %}
+				{{ sections['nav-right'] }}
+			{% endif %}
+		</div>
+	</div>
+</div>
+<div class="row col-12 ml-0 body-panel">
+	<div class="col-md-9 body-panel pl-0">
+		{% if user.logeduser %}
+		<div class="row mt-0 ml-1 rounded admin-menu pl-2 pt-2 border">
+			{{ sections['nav'] }}
+		</div>
+		{% endif %}
+		{{ content }}
+		
+	</div>
+	<div class="col-md-3 menu-panel rounded p-2 d-none d-md-block" id="side-panel">
+		<button type="button" onclick="toogleMenu('side-panel',1);toogleMenu('btn-side-collapse-1',0);" id="btn-side-collapse-2" class="btn menu-btn d-md-none d-xs-block"><i class="fa fa-bars"></i></button>
+		side menu
+		</div>
+</div>
+<div class="row col-12 ml-0">
+	<div class="col-9 border-top border-bottom border-left text-center rounded-left">
+		Fashion <a href="{{ auth.loginurl }}">&copy;</a>
+	</div>
+	<div class="col-3 border-top border-bottom border-right rounded-right">
+	</div>
+</div>
+	
+	<!-- Custom scripts for all pages-->
+  	<script src="{{config.hostaddr }}vendor/jquery/jquery.min.js"></script>
+  	<script src="{{config.hostaddr }}vendor/jquery/popper.js"></script>
+  	<script src="{{config.hostaddr }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+		function toogleMenu(panel,toogle){
+			panel="#"+panel;
+			if (toogle==1){
+			$(panel).toggleClass("toggled");
+			}
+			$(panel).toggleClass("d-none");
+		}
+        </script>
+</body>
+
+</html>

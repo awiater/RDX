@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ document.description }}">
+  <meta name="keywords" content="{{ document.keywords }}">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ document.title }}</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="{{ config.hostaddr }}templates/frontend/fashion/fashion.css" rel="stylesheet">
+  {{ document.refurls }}
+  <style>
+  	body{
+  		width:100%;
+  		height:100%;
+  		background-color: #f4f4f4;
+  	}
+  	.top-panel{
+  		background-color: black;
+  		width:100%;	
+  		color:	white;
+  		height:35px;
+  		padding: 2px 5px 2px 5px;
+  	}
+  	
+  	a:hover{
+  		text-decoration: none;
+  	}
+  	.linkonblack{
+  		color: #b38f00 !important;
+  	}
+  	.whitelinks li a{
+  		color: #b38f00 !important;
+  	}
+  	
+  	.whitelinks .dropdown-item{
+  		color: black !important;
+  	}
+  	
+  	.logo-panel{
+  		background-color: white;
+  		height:200px;
+  		width:100%;
+  	}
+  	
+  	.menu-panel{
+  		background-color: black;
+  		width:100%;	
+  		color:	black;
+  		height:50px;
+  		padding: 2px 5px 2px 5px;
+  	}
+  	
+  	.body-panel{
+  		background-color: white;
+  		padding: 1px 0 1px 0;
+  		border: solid;
+  		border-color: white;
+  		border-width:2px;
+  		height:auto;
+  		box-shadow: 2px 2px 10px #ebebeb;
+  	}
+  	
+  	.admin-menu{
+  		background-color: white;
+  		width:100%;
+  	}
+  	
+  	.toggled{
+		width:200px;
+		display: block;
+		position:fixed;
+		right:0;
+	}
+
+	.full-height{
+		height:100%;	
+	}
+	.min-height{
+		min-height: 100%;
+	}
+	.spacer-1{
+		height:15px;
+	}
+	.spacer-2{
+		width:5%;
+	}
+	.footer{
+  		background-color: black ;
+  		color:	#b38f00;
+  		height:120px;
+  		padding: 2px 5px 2px 5px;
+  	}
+  	.footer-hr{
+  		background-color: #EEEEEE;
+  		color:#EEEEEE;
+  		height:1px;
+  		border-width:0;
+  		width:80%;
+  	}
+  	.footer-left{
+  		position: relative;
+    	width: 50%;
+    	float: left;
+    	text-align: left
+  	}
+  	.footer-bottom{
+  		font-size: 13px;
+    	margin: 0 auto;
+    	padding: 0px 0;
+    	overflow: hidden;
+    	border-top: 1px solid #EEEEEE;
+  	}
+  	
+    .nopadding{
+    	padding:0;
+    	margin:0;
+    }
+    
+    .toggled{
+    	 position: fixed;
+      	top: 0;
+      	bottom: 0;
+      	left: 0;
+      	z-index: 1000;
+      	display: block;
+      	padding: 2px;
+      	overflow-x: hidden;
+      	overflow-y: auto;
+      	background-color: #EEEEEE;
+      	border-right: 1px solid #eee;
+      	width:250px;
+    }
+    
+    .toggled .body-panel{
+    	background-color: #EEEEEE;
+    	border: 0;
+    }
+    
+  </style>
+</head>
+
+<body>
+	<!-- Custom scripts for all pages-->
+  	{{ document.scripts }}
+  	
+	<div class="row col-12 ml-0 top-panel">
+		<button type="button" onclick="showMenu();" class="btn btn-link linkonblack d-md-none"><i class="fa fa-bars"></i></button>
+	</div>
+	<div class="row col-12 ml-0 logo-panel"></div>
+	<div class="row col-12 ml-0 menu-panel">
+		{% if user.logeduser %}
+		<div class="mt-0 ml-1 pl-2 pt-2">
+			{{ sections['nav-left'] }}
+		</div>
+		<div class="mr-3 ml-auto pl-2 pt-2">
+			{{ sections['nav-right'] }}
+		</div>
+		{% endif %}
+	</div>
+	<div class="row col-12 ml-0 spacer-1"></div>
+	<div class="row col-12 ml-0 nopadding min-height">
+		<div class="d-none d-md-block spacer-2"></div>
+		<div class="col-md-9 col-xs-12 nopadding">
+			{{ content }}
+		</div> 
+		
+		<div class="col-md-2 d-none d-md-block" id="menu">
+			<div class="top-panel d-none" id="sidebar-nav">
+				<button type="button" onclick="showMenu();" class="btn btn-link linkonblack"><i class="fa fa-times"></i></button>
+				{% if user.logeduser %}
+				<a href="{{ user.logoffurl }}" class="float-right btn btn-link linkonblack">{{ strings.general.logoff }}</a>
+				{% else %}
+				<a href="{{ auth.loginurl }}" class="float-right btn btn-link linkonblack"><i class="fa fa-user"></i></a>
+				{% endif %}
+			</div>
+			
+    		<div class="body-panel" style="height:200px;">aaa</div>
+    	</div>  
+	</div>
+	<div class="row col-12 ml-0 spacer-1"></div>
+	<footer class="row col-12 ml-0 footer">
+		<div class="footer-bottom col-12">
+			<div class="footer-left">&copy;{{ "now"|date("Y") }} 
+				{% if user.logeduser %}
+				Fashion
+				{% else %}
+				<a href="{{ auth.loginurl }}" class="text-white">Fashion</a>
+				{% endif %}
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script>
+		function showMenu(){
+			$("#menu").toggleClass("toggled");
+			$("#menu").toggleClass("d-none");
+			$("#sidebar-nav").toggleClass("d-none");
+		}
+        </script>
+</body>
+
+</html>

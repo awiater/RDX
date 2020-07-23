@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="Invoice_1.0_en.xsl"?>
+<Invoice><Document Type="Invoice" Version="1.0" /><InvoiceHeader><InvoiceId>01425396</InvoiceId><InvoiceIssueDate><Date>20200708</Date></InvoiceIssueDate><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><TaxTreatmentCode Value="NetInvoiceLevel" /><InvoiceDueDate><Date>20200930</Date></InvoiceDueDate><PaymentInstruction>EOM . 60</PaymentInstruction><SellerParty><PartyNumber>BRA001</PartyNumber><Address><Name1>ZF Services UK Ltd.</Name1><Street1>Redwither Road</Street1><Street2>Wrexham Industrial Estate</Street2><PostalCode>LL13 9RD</PostalCode><City>Wrexham</City><CountryCode>GB</CountryCode></Address></SellerParty><BuyerParty><PartyNumber>088190</PartyNumber><Address><Name1>AUTOPARTS . DIAGNOSTIC LTD</Name1><Name2>IFA</Name2><Street1>UNIT 7A</Street1><Street2>WITAN PARK AVENUE TWO</Street2><PostalCode>OX28 4FH</PostalCode><City>STATION LANE WITNEY</City><CountryCode>GB</CountryCode></Address></BuyerParty><DeliveryParty><PartyNumber>088190</PartyNumber><Address><Name1>AUTOPARTS . DIAGNOSTIC LTD</Name1><Name2>IFA</Name2><Street1>UNIT 7A</Street1><Street2>WITAN PARK AVENUE TWO</Street2><PostalCode>OX28 4FH</PostalCode><City>STATION LANE WITNEY</City><CountryCode>GB</CountryCode></Address></DeliveryParty><InvoiceOrg><TaxRegistrationNumber>821369044</TaxRegistrationNumber><InvoiceParty><PartyNumber>086519</PartyNumber><Address><Name1>AUTOPARTS . DIAGNOSTIC LTD</Name1><Street1>UNIT 5 SHEPHERD RD</Street1><Street2>GLOUCESTER</Street2><PostalCode>GL2 5EL</PostalCode><City /><CountryCode>GB</CountryCode></Address></InvoiceParty></InvoiceOrg><Currency>GBP</Currency><FreeText Caption="Supplier Code">BRA001</FreeText></InvoiceHeader><InvoiceDetail><PositionNumber>1</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA1364</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>1</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>1</SellerOrderItemRef><BuyerOrderItemRef>1</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>78.63</Amount></AllowOrCharge><UnitPrice><Amount>104.84</Amount></UnitPrice><TotalPrice><Amount>104.84</Amount></TotalPrice><TotalValue><Amount>26.21</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>3</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA1751R</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>3</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>2</SellerOrderItemRef><BuyerOrderItemRef>2</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>116.67</Amount></AllowOrCharge><UnitPrice><Amount>155.56</Amount></UnitPrice><TotalPrice><Amount>155.56</Amount></TotalPrice><TotalValue><Amount>38.89</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>5</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA1763R</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>5</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>3</SellerOrderItemRef><BuyerOrderItemRef>3</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>73.38</Amount></AllowOrCharge><UnitPrice><Amount>97.84</Amount></UnitPrice><TotalPrice><Amount>97.84</Amount></TotalPrice><TotalValue><Amount>24.46</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>7</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA2130R</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>7</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>4</SellerOrderItemRef><BuyerOrderItemRef>4</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>124.29</Amount></AllowOrCharge><UnitPrice><Amount>165.72</Amount></UnitPrice><TotalPrice><Amount>165.72</Amount></TotalPrice><TotalValue><Amount>41.43</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>9</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA2363</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>9</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>5</SellerOrderItemRef><BuyerOrderItemRef>5</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>99.27</Amount></AllowOrCharge><UnitPrice><Amount>132.36</Amount></UnitPrice><TotalPrice><Amount>132.36</Amount></TotalPrice><TotalValue><Amount>33.09</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>11</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA2363R</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>11</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>6</SellerOrderItemRef><BuyerOrderItemRef>6</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>99.27</Amount></AllowOrCharge><UnitPrice><Amount>132.36</Amount></UnitPrice><TotalPrice><Amount>132.36</Amount></TotalPrice><TotalValue><Amount>33.09</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>13</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA2528R</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>13</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>7</SellerOrderItemRef><BuyerOrderItemRef>7</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>185.37</Amount></AllowOrCharge><UnitPrice><Amount>247.16</Amount></UnitPrice><TotalPrice><Amount>247.16</Amount></TotalPrice><TotalValue><Amount>61.79</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>15</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA2627R</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER REMAN</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>15</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>8</SellerOrderItemRef><BuyerOrderItemRef>8</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>129.99</Amount></AllowOrCharge><UnitPrice><Amount>173.32</Amount></UnitPrice><TotalPrice><Amount>173.32</Amount></TotalPrice><TotalValue><Amount>43.33</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceDetail><PositionNumber>17</PositionNumber><Quantity UoM="PCE">1</Quantity><ProductId><MakerCode /><ProductNumber>CA2803</ProductNumber></ProductId><ProductDescription><ProductName1>CALIPER</ProductName1></ProductDescription><DesAdvRef><DocumentNumber>01281964</DocumentNumber><Date>20200708</Date></DesAdvRef><DesAdvItemRef><PositionNumber>17</PositionNumber></DesAdvItemRef><OrderRef><SellerOrderNumber>193554</SellerOrderNumber><BuyerOrderNumber>WWP124680</BuyerOrderNumber><Date>20200708</Date></OrderRef><OrderItemRef><SellerOrderItemRef>9</SellerOrderItemRef><BuyerOrderItemRef>9</BuyerOrderItemRef></OrderItemRef><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription>Negotiated Discount</AllowOrChargeDescription><Percent>75.000</Percent><Amount>140.37</Amount></AllowOrCharge><UnitPrice><Amount>187.16</Amount></UnitPrice><TotalPrice><Amount>187.16</Amount></TotalPrice><TotalValue><Amount>46.79</Amount></TotalValue><FreeText Caption="CoO">GB</FreeText></InvoiceDetail><InvoiceSummary><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA1364 Order 193554 Qty:</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA1751R Order 193554 Qty</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA1763R Order 193554 Qty</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA2130R Order 193554 Qty</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA2363 Order 193554 Qty:</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA2363R Order 193554 Qty</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA2528R Order 193554 Qty</AllowOrChargeDescription><Amount>30.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA2627R Order 193554 Qty</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription>Surcharge: CA2803 Order 193554 Qty:</AllowOrChargeDescription><Amount>5.00</Amount></AllowOrCharge><Tax><TaxCode>1</TaxCode><Percent>20</Percent><Amount>83.82</Amount></Tax><InvoiceTotals><InvoiceNetValue><Amount>419.08</Amount></InvoiceNetValue><InvoiceGrossValue><Amount>502.90</Amount></InvoiceGrossValue><InvoiceTaxAmount><Amount>83.82</Amount></InvoiceTaxAmount><InvoiceDiscount><Amount>1047.24</Amount></InvoiceDiscount><InvoiceCharge><Amount>70.00</Amount></InvoiceCharge><InvoiceAmountPayable><Amount>502.90</Amount></InvoiceAmountPayable></InvoiceTotals><TaxTotals><Tax><TaxCode>1</TaxCode><Amount>83.82</Amount></Tax></TaxTotals><AllowOrChargeTotals><AllowOrCharge><AllowOrChargeIdentifier Value="Allow" /><AllowOrChargeDescription /><Amount>1047.24</Amount></AllowOrCharge><AllowOrCharge><AllowOrChargeIdentifier Value="Charge" /><AllowOrChargeDescription /><Amount>70.00</Amount></AllowOrCharge></AllowOrChargeTotals><TaxCodeDescription><TaxCode>1</TaxCode><TaxDescription>UK Std VAT 20.0%</TaxDescription></TaxCodeDescription></InvoiceSummary></Invoice>
+
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="eBIS_MAM.xsl" ?>
+<biztalk_1 xmlns="urn:schemas-biztalk-org:biztalk:biztalk_1">
+  <header>
+    <delivery>
+      <message/>
+      <to>
+        <address/>
+      </to>
+      <from>
+        <address/>
+      </from>
+    </delivery>
+    <manifest>
+      <document>
+        <name>Invoice</name>
+        <description>EBis Invoice</description>
+      </document>
+    </manifest>
+  </header>
+  <body>
+    <Invoice xmlns="urn:www.basda.org/schema/eBIS-XML_invoice_v3.00.xml">
+      <InvoiceHead>
+        <Schema>
+          <Version>3.00</Version>
+        </Schema>
+        <Stylesheet>
+          <StylesheetOwner/>
+          <StylesheetName>eBis_MAM.xsl</StylesheetName>
+          <Version/>
+          <StylesheetType>xsl</StylesheetType>
+        </Stylesheet>
+        <Parameters>
+          <Language>en_GB</Language>
+          <DecimalSeparator>.</DecimalSeparator>
+          <Precision>11.2</Precision>
+        </Parameters>
+        <OriginatingSoftware>
+          <SoftwareManufacturer>KLARIUS PRODUCTS LTD.</SoftwareManufacturer>
+          <SoftwareProduct>EDI702</SoftwareProduct>
+          <SoftwareVersion>1.0</SoftwareVersion>
+        </OriginatingSoftware>
+        <InvoiceType Code="INV">Commercial Invoice</InvoiceType>
+        <Function>FII</Function>
+        <InvoiceCurrency>
+          <Currency Code="GBP"/>
+        </InvoiceCurrency>
+        <Checksum>46085</Checksum>
+      </InvoiceHead>
+      <InvoiceReferences>
+        <BuyersOrderNumber>PR075274</BuyersOrderNumber>
+        <SuppliersInvoiceNumber>17749118</SuppliersInvoiceNumber>
+        <DeliveryNoteNumber>07/A59453</DeliveryNoteNumber>
+      </InvoiceReferences>
+      <InvoiceDate>2020-07-08</InvoiceDate>
+      <Supplier>
+        <SupplierReferences>
+          <BuyersCodeForSupplier>KLA001</BuyersCodeForSupplier>
+          <TaxNumber>154098600</TaxNumber>
+          <GLN>1UF154098600ST10</GLN>
+        </SupplierReferences>
+        <Party>KLARIUS PRODUCTS LTD.</Party>
+        <Address>
+          <AddressLine>BROOKHOUSES IND. ESTATE</AddressLine>
+          <AddressLine>NEW HADEN ROAD</AddressLine>
+          <AddressLine>CHEADLE</AddressLine>
+          <AddressLine>STOKE-ON-TRENT, STAFFS.</AddressLine>
+          <AddressLine></AddressLine>
+          <AddressLine>ST10 1UF</AddressLine>
+        </Address>
+        <Contact>
+          <Name></Name>
+          <Department></Department>
+          <DDI></DDI>
+        </Contact>
+      </Supplier>
+      <Buyer>
+        <BuyerReferences>
+          <SuppliersCodeForBuyer>205179</SuppliersCodeForBuyer>
+          <GLN></GLN>
+        </BuyerReferences>
+        <Party>AUTOPARTS &amp; DIAGNOSTICS LTD</Party>
+        <Address>
+          <AddressLine>5 SHEPHERD ROAD</AddressLine>
+          <AddressLine>GLOUCESTER</AddressLine>
+          <AddressLine>GLOUCESTERSHIRE</AddressLine>
+          <AddressLine></AddressLine>
+          <AddressLine></AddressLine>
+          <AddressLine>GL2 5EL</AddressLine>
+        </Address>
+        <Contact>
+          <Name></Name>
+          <Department></Department>
+          <DDI></DDI>
+        </Contact>
+      </Buyer>
+      <Delivery>
+        <DeliverTo>
+          <DeliverToReferences>
+            <BuyersCodeForDelivery>490-04</BuyersCodeForDelivery>
+            <GLN></GLN>
+          </DeliverToReferences>
+          <Party>AUTOPARTS &amp; DIAGNOSTICS LTD</Party>
+          <Address>
+            <AddressLine>UNIT 15 GLOBAL BUSINESS PARK</AddressLine>
+            <AddressLine>WILKINSON ROAD</AddressLine>
+            <AddressLine>CIRENCESTER</AddressLine>
+            <AddressLine></AddressLine>
+            <AddressLine></AddressLine>
+            <AddressLine>GL7 1YZ</AddressLine>
+          </Address>
+          <Contact>
+            <Name></Name>
+            <Department></Department>
+            <DDI></DDI>
+          </Contact>
+        </DeliverTo>
+      </Delivery>
+      <InvoiceTo>
+        <InvoiceToReferences>
+          <GLN></GLN>
+        </InvoiceToReferences>
+        <Party>AUTOPARTS &amp; DIAGNOSTICS LTD</Party>
+        <Address>
+          <AddressLine>5 SHEPHERD ROAD</AddressLine>
+          <AddressLine>GLOUCESTER</AddressLine>
+          <AddressLine>GLOUCESTERSHIRE</AddressLine>
+          <AddressLine></AddressLine>
+          <AddressLine></AddressLine>
+          <AddressLine>GL2 5EL</AddressLine>
+        </Address>
+        <Contact>
+          <Name></Name>
+          <Department></Department>
+          <DDI></DDI>
+        </Contact>
+      </InvoiceTo>
+      <InvoiceLine>
+        <LineNumber>1</LineNumber>
+        <InvoiceLineReferences>
+          <BuyersOrderLineReference></BuyersOrderLineReference>
+        </InvoiceLineReferences>
+        <Product>
+          <SuppliersProductCode>FRP7B</SuppliersProductCode>
+          <Description>FLEXIBLE REPAIR PIPE 282MM</Description>
+        </Product>
+        <Quantity>
+          <PackSize>1</PackSize>
+          <Amount>1</Amount>
+        </Quantity>
+        <Price>
+          <UnitPrice>13.39</UnitPrice>
+        </Price>
+        <LineTax>
+          <TaxRate Code="S">20.00</TaxRate>
+          <TaxValue/>
+        </LineTax>
+        <LineTotal>13.39</LineTotal>
+      </InvoiceLine>
+      <InvoiceLine>
+        <LineNumber>2</LineNumber>
+        <InvoiceLineReferences>
+          <BuyersOrderLineReference></BuyersOrderLineReference>
+        </InvoiceLineReferences>
+        <Product>
+          <SuppliersProductCode>FRP13K</SuppliersProductCode>
+          <Description>FLEXIBLE REPAIR PIPE 282MM</Description>
+        </Product>
+        <Quantity>
+          <PackSize>1</PackSize>
+          <Amount>1</Amount>
+        </Quantity>
+        <Price>
+          <UnitPrice>14.77</UnitPrice>
+        </Price>
+        <LineTax>
+          <TaxRate Code="S">20.00</TaxRate>
+          <TaxValue/>
+        </LineTax>
+        <LineTotal>14.77</LineTotal>
+      </InvoiceLine>
+      <InvoiceLine>
+        <LineNumber>3</LineNumber>
+        <InvoiceLineReferences>
+          <BuyersOrderLineReference></BuyersOrderLineReference>
+        </InvoiceLineReferences>
+        <Product>
+          <SuppliersProductCode>FRP14J</SuppliersProductCode>
+          <Description>FLEXIBLE REPAIR PIPE 333MM</Description>
+        </Product>
+        <Quantity>
+          <PackSize>1</PackSize>
+          <Amount>1</Amount>
+        </Quantity>
+        <Price>
+          <UnitPrice>15.26</UnitPrice>
+        </Price>
+        <LineTax>
+          <TaxRate Code="S">20.00</TaxRate>
+          <TaxValue/>
+        </LineTax>
+        <LineTotal>15.26</LineTotal>
+      </InvoiceLine>
+      <InvoiceLine>
+        <LineNumber>4</LineNumber>
+        <InvoiceLineReferences>
+          <BuyersOrderLineReference></BuyersOrderLineReference>
+        </InvoiceLineReferences>
+        <Product>
+          <SuppliersProductCode>FRP21A</SuppliersProductCode>
+          <Description>FLEXIBLE REPAIR PIPE 282MM</Description>
+        </Product>
+        <Quantity>
+          <PackSize>1</PackSize>
+          <Amount>1</Amount>
+        </Quantity>
+        <Price>
+          <UnitPrice>17.36</UnitPrice>
+        </Price>
+        <LineTax>
+          <TaxRate Code="S">20.00</TaxRate>
+          <TaxValue/>
+        </LineTax>
+        <LineTotal>17.36</LineTotal>
+      </InvoiceLine>
+      <InvoiceLine>
+        <LineNumber>5</LineNumber>
+        <InvoiceLineReferences>
+          <BuyersOrderLineReference></BuyersOrderLineReference>
+        </InvoiceLineReferences>
+        <Product>
+          <SuppliersProductCode>FRP17E</SuppliersProductCode>
+          <Description>FLEXIBLE REPAIR PIPE 333MM</Description>
+        </Product>
+        <Quantity>
+          <PackSize>1</PackSize>
+          <Amount>1</Amount>
+        </Quantity>
+        <Price>
+          <UnitPrice>34.35</UnitPrice>
+        </Price>
+        <LineTax>
+          <TaxRate Code="S">20.00</TaxRate>
+          <TaxValue/>
+        </LineTax>
+        <LineTotal>34.35</LineTotal>
+      </InvoiceLine>
+      <Narrative>Delivery Note 07/A59453. Business transactions subject to our standard terms and conditions of sale. A copy is available on request. RFile=1079.</Narrative>
+      <TaxSubTotal>
+        <TaxRate Code="S">20.00</TaxRate>
+        <NumberOfLinesAtRate>5</NumberOfLinesAtRate>
+        <TotalValueAtRate>95.13</TotalValueAtRate>
+        <TaxableValueAtRate>95.13</TaxableValueAtRate>
+        <TaxAtRate>19.03</TaxAtRate>
+        <NetPaymentAtRate>114.16</NetPaymentAtRate>
+        <GrossPaymentAtRate>114.16</GrossPaymentAtRate>
+        <TaxCurrency>
+          <Currency Code="GBP"/>
+        </TaxCurrency>
+      </TaxSubTotal>
+      <InvoiceTotal>
+        <NumberOfLines>5</NumberOfLines>
+        <NumberOfTaxRates>1</NumberOfTaxRates>
+        <LineValueTotal>95.13</LineValueTotal>
+        <TaxableTotal>95.13</TaxableTotal>
+        <TaxTotal>19.03</TaxTotal>
+        <NetPaymentTotal>114.16</NetPaymentTotal>
+        <GrossPaymentTotal>114.16</GrossPaymentTotal>
+      </InvoiceTotal>
+    </Invoice>
+  </body>
+</biztalk_1>

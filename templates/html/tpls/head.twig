@@ -1,0 +1,10 @@
+{% for link in links %}
+<link rel="stylesheet" type="text/css" href="{{ link }} ">
+{% endfor %}
+{% for script in scripts %}
+	{% if script is iterable %}
+	<script src="{{ script.url }}">{{ script.body }}</script>
+	{% else %}
+	<script src="{{ script }}"></script>
+	{% endif %}
+{% endfor %}

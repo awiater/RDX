@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title></title>
+  		<meta name="author" content="">
+  		<meta name="description" content="">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		{{ head }}
+  		<link rel="stylesheet" type="text/css" href="{{ config.hostaddr }}templates/admin/default/css/default.css">
+  		
+	</head>	
+	<body>
+	<script src="{{config.hostaddr }}vendor/jquery/jquery.min.js"></script>
+	<script src="{{config.hostaddr }}vendor/jquery/popper.js"></script>
+	<script src="{{config.hostaddr }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 	
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					{% for item in items %}
+						{% if item.link is iterable %}
+							<li class="nav-item dropdown {{ active_menu== 'item.text'?'active' }}">
+      							<a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          						{{ item.text }}
+        						</a>
+        						<div class="dropdown-menu" aria-labelledby="{{ item.text }}Dropdown">
+        							{% for subitem in item.link %}
+        								{% if subitem.link=='#divider' %}
+											<hr/>
+										{% else %}
+        									<a class="dropdown-item" href="{{ subitem.link }}" {{ subitem.target ? 'target="'~subitem.target~'"' }}>{{ subitem.text }}</a>
+        								{% endif %}
+        							{% endfor %}
+        						</div>
+      						</li>
+						{% else %}
+							{% if item.link=='#divider' %}
+								<li class="divider"></li>
+							{% else %}
+								<li class="nav-item {{ active_menu=='item.text'?'active' }}">
+        							<a class="nav-link" href="{{ item.link }}" {{ item.target ? 'target="'~item.target~'"' }}>{{ item.text }}</a>
+      							</li>
+      						{% endif %}
+      					{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<ul class="navbar-nav ml-auto">
+  				<li class="nav-item">
+					<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                
+                		<span class="ml-2 text-gray-600">{{ logeduser.name }}</span> 
+                		{% if logeduser.avatar %}
+                		<img class="img-profile rounded-circle" src="{{ config.hostaddr }}storage/images/{{ logeduser.avatar }}" style="width:35px;height:35px;">
+                		{% else %}
+                		<i class="fa fa-user-circle fa-lg"></i>
+                		{% endif %}
+             		</a>
+              		<!-- Dropdown - User Information -->
+              		<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                		<a class="dropdown-item" href="{{ linkuserprofile }}">
+                  		<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  		{{ strings.general.profile }}
+                		</a>
+                		<div class="dropdown-divider"></div>
+                		<a class="dropdown-item" href="{{ linklogoff }}">
+                  		<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  		{{ strings.general.logoff }}
+                		</a>
+              		</div>
+      			</li>
+  			</ul>
+		</nav>
+		{{ content }}
+	</body>
+</html>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({html: true});
+  $('.toast').toast('show');
+});
+
+$("select.yesno").change(function(){
+	checkEnabled($(this).attr("id"));
+});
+
+function checkEnabled(boxid)
+{
+		var yesnoVal=$("#"+boxid+" option:selected").val();
+		if (yesnoVal==0){
+			$("#"+boxid).removeClass("bg-success").addClass("bg-danger");
+		}else{
+			$("#"+boxid).removeClass("bg-danger").addClass("bg-success");
+		}
+}
+
+{{ wyswigeditor }}
+</script>

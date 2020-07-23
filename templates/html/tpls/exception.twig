@@ -1,0 +1,7 @@
+<div class="alert alert-danger" role="alert">
+<strong>{{ message }}</strong>
+{% for trace in traces %}
+	<p>Function  {{ trace.function}} from class {{ trace.class }} in file {{ trace.file }} at line {{ trace.line }}
+	</p>
+{% endfor %}
+</div>
